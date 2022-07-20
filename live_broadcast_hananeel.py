@@ -12,9 +12,7 @@ live = ItsAGramLive(
     username=os.getenv('IGL_USERNAME'),
     password=os.getenv('IGL_PASSWORD')
 )
-+    username='rainbowpoopiee_test',
-+    password='s27F9tpVPmCunUV'
-+file = '/root/itsagramlive/video/selah2.mp4'
+
 if live.login():
     print("You'r logged in")
 
