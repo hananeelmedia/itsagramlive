@@ -12,7 +12,9 @@ live = ItsAGramLive(
     username=os.getenv('IGL_USERNAME'),
     password=os.getenv('IGL_PASSWORD')
 )
-
++    username='rainbowpoopiee_test',
++    password='s27F9tpVPmCunUV'
++file = '/root/itsagramlive/video/selah2.mp4'
 if live.login():
     print("You'r logged in")
 
@@ -44,7 +46,7 @@ if live.login():
                          "-vcodec libx264 " \
                          "-preset veryfast " \
                          "-g 30 -r 30 " \
-                         "-f flv '{stream_server}{stream_key}'".format(file=args.file,
+                         "-f flv '{stream_server}{stream_key}'".format(file=os.getenv('IGL_FILENAME'),
                                                                        stream_server=live.stream_server,
                                                                        stream_key=live.stream_key)
 
